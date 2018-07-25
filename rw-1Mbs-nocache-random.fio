@@ -1,6 +1,6 @@
 #This test is a mix of 50% random reads and writes with a block size of 1M and queue depth of 64
 #The test will bypass cache through direct=1 
-#It will use 4 files and 4 jobs
+#It will use 4 files and 4 jobs per file which will spawn a total of 16 jobs
 #Reporting will be for the entire test instead of each job
 [global]
 name=rw-1Mbs-nocache
