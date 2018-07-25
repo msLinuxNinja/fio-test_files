@@ -1,4 +1,4 @@
-#This test is a mix of 50% reads and 50% writes with a block size of 1M and queue depth of 64
+#This test is a mix of 50% random reads and writes with a block size of 1M and queue depth of 64
 #The test will bypass cache through direct=1 
 #It will use 4 files and 4 jobs
 [global]
