@@ -2,7 +2,7 @@
 #The test will bypass cache through direct=1 
 #It will use 4 files and 4 jobs
 [global]
-name=fio-rand-RW
+name=rw-1Mbs-nocache
 rw=randrw
 rwmixread=50
 rwmixwrite=50
