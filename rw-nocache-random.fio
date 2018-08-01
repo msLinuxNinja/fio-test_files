@@ -16,27 +16,21 @@ direct=1
 numjobs=4
 time_based=1
 runtime=180
+ioengine=libaio
+iodepth=64
 
 [file1]
 size=10G
-ioengine=libaio
-iodepth=64
 filename=rw-nocache-random.1
 
 [file2]
 size=10G
-ioengine=libaio
-iodepth=64
 filename=rw-nocache-random.2
 
 [file3]
 size=10G
-ioengine=libaio
-iodepth=64
 filename=rw-nocache-random.3
 
 [file4]
 size=10G
-ioengine=libaio
-iodepth=64
 filename=rw-nocache-random.4
