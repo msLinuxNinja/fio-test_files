@@ -6,7 +6,7 @@
 #read for sequential reads, write for sequentail writes, randread for random reads, randwrite for random reads
 #randrw for a mix of random read and writes percentage can be controlled through rwmixread and rwmixwrite.4
 [global]
-name=rw-1Mbs-nocache
+name=rw-nocache-random
 rw=randrw
 rwmixread=50
 rwmixwrite=50
@@ -21,22 +21,22 @@ runtime=180
 size=10G
 ioengine=libaio
 iodepth=64
-filename=rw-1Mbs-nocache.1
+filename=rw-nocache-random.1
 
 [file2]
 size=10G
 ioengine=libaio
 iodepth=64
-filename=rw-1Mbs-nocache.2
+filename=rw-nocache-random.2
 
 [file3]
 size=10G
 ioengine=libaio
 iodepth=64
-filename=rw-1Mbs-nocache.3
+filename=rw-nocache-random.3
 
 [file4]
 size=10G
 ioengine=libaio
 iodepth=64
-filename=rw-1Mbs-nocache.4
+filename=rw-nocache-random.4
