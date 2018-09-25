@@ -1,0 +1,33 @@
+#This test does sequential reads and tries to achieve the maximum IOPS possible. Block size and queue depth can be changed on the settings bs="" and iodepth=""
+#It will use 4 files and 4 jobs per file which will spawn a total of 16 jobs
+#Reporting will be for the entire test instead of each job this is done through group_reporting=1
+# rw= tells FIO what operation to perform and if it is sequential or random IO, options can be:
+#read for sequential reads, write for sequentail writes, randread for random reads, randwrite for random reads
+#randrw for a mix of random read and writes percentage can be controlled through rwmixread and rwmixwrite.4
+[global]
+name=write-maxIOPS-sequential
+rw=write
+group_reporting=1
+bs=4K
+direct=1
+numjobs=4
+time_based=1
+runtime=180
+iodepth=64
+ioengine=libaio
+
+[file1]
+size=10G
+filename=write-maxIOPS-sequential.1
+
+[file2]
+size=10G
+filename=write-maxIOPS-sequential.2
+
+[file3]
+size=10G
+filename=rwrite-maxIOPS-sequential.3
+
+[file4]
+size=10G
+filename=write-maxIOPS-sequential.4
