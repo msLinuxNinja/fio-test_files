@@ -3,7 +3,7 @@
 #Reporting will be for the entire test instead of each job this is done through group_reporting=1
 # rw= tells FIO what operation to perform and if it is sequential or random IO, options can be:
 #read for sequential reads, write for sequentail writes, randread for random reads, randwrite for random reads
-#randrw for a mix of random read and writes percentage can be controlled through rwmixread and rwmixwrite.4
+#randrw for a mix of random read and writes percentage can be controlled through rwmixread and rwmixwrite
 [global]
 name=write-maxIOPS-sequential
 rw=write
