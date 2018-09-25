@@ -9,7 +9,6 @@ name=write-maxIOPS-sequential
 rw=write
 group_reporting=1
 bs=4K
-direct=1
 numjobs=4
 time_based=1
 runtime=180
