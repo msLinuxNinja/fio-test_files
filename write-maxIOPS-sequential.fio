@@ -26,7 +26,7 @@ filename=write-maxIOPS-sequential.2
 
 [file3]
 size=10G
-filename=rwrite-maxIOPS-sequential.3
+filename=write-maxIOPS-sequential.3
 
 [file4]
 size=10G
