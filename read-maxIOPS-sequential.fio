@@ -14,6 +14,8 @@ time_based=1
 runtime=180
 iodepth=64
 ioengine=libaio
+direct=1
+
 
 [file1]
 size=10G
