@@ -1,3 +1,4 @@
+#This test does random reads. Block size and queue depth can be changed on the settings bs="" and iodepth=""
 #The test will bypass cache through direct=1, some filesystems do not support direct IO, set this to 0 if that's the case
 #It will use 4 files and 4 jobs per file which will spawn a total of 16 jobs
 #Reporting will be for the entire test instead of each job this is done through group_reporting=1
