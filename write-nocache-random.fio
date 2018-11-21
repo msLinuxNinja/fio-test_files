@@ -18,17 +18,17 @@ iodepth=64
 ioengine=libaio
 
 [file1]
-size=10G
-filename=write-nocache-random.1
+size=4G
+filename=fio.file.1
 
 [file2]
-size=10G
-filename=write-nocache-random.2
+size=4G
+filename=fio.file.2
 
 [file3]
-size=10G
-filename=write-nocache-random.3
+size=4G
+filename=fio.file.3
 
 [file4]
-size=10G
-filename=write-nocache-random.4
+size=4G
+filename=fio.file.4
