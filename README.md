@@ -27,7 +27,7 @@ This test runs SEQUENTIAL IO using 1M Blocksize, a larger blocksize will yield h
 Each file can be changed to match a specific need, settings on the global section affect the entire test vs settings specified in the file section will only affect that specific file.
 
 For example:
-`
+```
 [global]
 name=read-nocache-random
 rw=randread
@@ -43,6 +43,6 @@ ioengine=libaio
 [file1]
 size=4G
 filename=fio.file.1
-`
+```
 
 Where globally the test uses 4K blocksize, ignores pagecache through the use of direct IO, spawns 4 jobs per file, uses a queue depth of 64 and uses the libaio engine. 
