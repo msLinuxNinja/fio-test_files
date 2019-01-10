@@ -7,7 +7,7 @@
 #read for sequential reads, write for sequential writes, randread for random reads, randwrite for random reads
 #randrw for a mix of random read and writes percentage can be controlled through rwmixread and rwmixwrite
 [global]
-name=read-nocache-random
+name=read-maxIOPS-random
 rw=randread
 group_reporting=1
 bs=4K
