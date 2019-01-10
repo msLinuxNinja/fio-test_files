@@ -46,3 +46,7 @@ filename=fio.file.1
 ```
 
 Where globally the test uses 4K blocksize, ignores pagecache through the use of direct IO, spawns 4 jobs per file, uses a queue depth of 64 and uses the libaio engine. 
+
+More info regarding FIO:
+[FIO MANUAL](https://media.readthedocs.org/pdf/fio/latest/fio.pdf)
+
