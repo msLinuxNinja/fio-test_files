@@ -23,3 +23,26 @@ This test runs SEQUENTIAL IO using 4K blocksize, with a smaller blocksize this t
 This test runs RANDOM IO using 1M Blocksize, a larger blocksize will yield higher throughput and lower IOPS.
 # write-maxTHROUGHPUT-sequential.fio 	
 This test runs SEQUENTIAL IO using 1M Blocksize, a larger blocksize will yield higher throughput and lower IOPS.
+
+Each file can be changed to match a specific need, settings on the global section affect the entire test vs settings specified in the file section will only affect that specific file.
+
+For example:
+`
+[global]
+name=read-nocache-random
+rw=randread
+group_reporting=1
+bs=4K
+direct=1
+numjobs=4
+time_based=1
+runtime=180
+iodepth=64
+ioengine=libaio
+
+[file1]
+size=4G
+filename=fio.file.1
+`
+
+Where globally the test uses 4K blocksize, ignores pagecache through the use of direct IO, spawns 4 jobs per file, uses a queue depth of 64 and uses the libaio engine. 
