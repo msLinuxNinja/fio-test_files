@@ -2,6 +2,10 @@ These files are used by FIO (Flexible IO Tester) to control IO testing. Each fil
 
 All the tests bypass the pagecache to avoid false positives when doing IO, the idea of these tests is to verify disk performance.
 
+To run FIO simply move into the directory you want to test and run:
+
+`fio /path/to/config/file`
+
 
 # read-maxIOPS-random.fio 
 This test runs RANDOM IO using 4K blocksize, with a smaller blocksize this test is suited for IOPS testing.
