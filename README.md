@@ -7,25 +7,25 @@ To run FIO simply move into the directory you want to test and run:
 `fio /path/to/config/file`
 
 
-# read-maxIOPS-random.fio 
+## read-maxIOPS-random.fio 
 This test runs RANDOM IO using 4K blocksize, with a smaller blocksize this test is suited for IOPS testing.
-# read-maxIOPS-sequential.fio 	
+## read-maxIOPS-sequential.fio 	
 This test runs SEQUENTIAL IO using 4K blocksize, with a smaller blocksize this test is suited for IOPS testing.
-# read-maxTHROUGHPUT-random.fio 	
+## read-maxTHROUGHPUT-random.fio 	
 This test runs RANDOM IO using 1M Blocksize, a larger blocksize will yield higher throughput and lower IOPS.
-# read-maxTHROUGHPUT-sequential.fio 	
+## read-maxTHROUGHPUT-sequential.fio 	
 This test runs SEQUENTIAL IO using 1M Blocksize, a larger blocksize will yield higher throughput and lower IOPS.
-# rw-random-IOPS.fio 	
+## rw-random-IOPS.fio 	
 This test runs RANDOM reads and writes in a 50/50 ratio using 4K blocksize suited for IOPS testing.
-# rw-random-THROUGHPUT.fio 	
+## rw-random-THROUGHPUT.fio 	
 This test runs RANDOM reads and writes in a 50/50 ratio using 1M blocksize yielding higher throughput and lower IOPS.
-# write-maxIOPS-random.fio
+## write-maxIOPS-random.fio
 This test runs RANDOM IO using 4K blocksize, with a smaller blocksize this test is suited for IOPS testing.
-# write-maxIOPS-sequential.fio 	
+## write-maxIOPS-sequential.fio 	
 This test runs SEQUENTIAL IO using 4K blocksize, with a smaller blocksize this test is suited for IOPS testing.
-# write-maxTHROUGHPUT-random.fio 	
+## write-maxTHROUGHPUT-random.fio 	
 This test runs RANDOM IO using 1M Blocksize, a larger blocksize will yield higher throughput and lower IOPS.
-# write-maxTHROUGHPUT-sequential.fio 	
+## write-maxTHROUGHPUT-sequential.fio 	
 This test runs SEQUENTIAL IO using 1M Blocksize, a larger blocksize will yield higher throughput and lower IOPS.
 
 Each file can be changed to match a specific need, settings on the global section affect the entire test vs settings specified in the file section will only affect that specific file.
