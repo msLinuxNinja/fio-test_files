@@ -1,0 +1,34 @@
+#This test saturates the storage system. 
+#The test will bypass cache through direct=1, some filesystems do not support direct IO, set this to 0 if that's the case
+#It will use 4 files and 4 jobs per file which will spawn a total of 16 jobs
+#Reporting will be for the entire test instead of each job this is done through group_reporting=1
+#rw= tells FIO what operation to perform and if it is sequential or random IO, options can be:
+#read for sequential reads, write for sequential writes, randread for random reads, randwrite for random reads
+#randrw for a mix of random read and writes percentage can be controlled through rwmixread and rwmixwrite
+[global]
+name=saturation
+rw=randrw
+group_reporting=1
+bs=4K
+direct=1
+numjobs=32
+time_based=1
+runtime=180
+iodepth=128
+ioengine=libaio
+
+[file1]
+size=4G
+filename=fio.file.1
+
+[file2]
+size=4G
+filename=fio.file.2
+
+[file3]
+size=4G
+filename=fio.file.3
+
+[file4]
+size=4G
+filename=fio.file.4
