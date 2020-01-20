@@ -15,16 +15,8 @@ This test runs SEQUENTIAL IO using 4K blocksize, with a smaller blocksize this t
 This test runs RANDOM IO using 1M Blocksize, a larger blocksize will yield higher throughput and lower IOPS.
 ## read-maxTHROUGHPUT-sequential.fio 	
 This test runs SEQUENTIAL IO using 1M Blocksize, a larger blocksize will yield higher throughput and lower IOPS.
-## rw-random-IOPS.fio 	
-This test runs RANDOM reads and writes in a 50/50 ratio using 4K blocksize suited for IOPS testing.
-## rw-random-THROUGHPUT.fio 	
-This test runs RANDOM reads and writes in a 50/50 ratio using 1M blocksize yielding higher throughput and lower IOPS.
-## write-maxIOPS-random.fio
-This test runs RANDOM IO using 4K blocksize, with a smaller blocksize this test is suited for IOPS testing.
 ## write-maxIOPS-sequential.fio 	
 This test runs SEQUENTIAL IO using 4K blocksize, with a smaller blocksize this test is suited for IOPS testing.
-## write-maxTHROUGHPUT-random.fio 	
-This test runs RANDOM IO using 1M Blocksize, a larger blocksize will yield higher throughput and lower IOPS.
 ## write-maxTHROUGHPUT-sequential.fio 	
 This test runs SEQUENTIAL IO using 1M Blocksize, a larger blocksize will yield higher throughput and lower IOPS.
 
