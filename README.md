@@ -11,8 +11,6 @@ To run FIO simply move into the directory you want to test and run:
 This test runs RANDOM IO using 4K blocksize, with a smaller blocksize this test is suited for IOPS testing.
 ## read-maxIOPS-sequential.fio 	
 This test runs SEQUENTIAL IO using 4K blocksize, with a smaller blocksize this test is suited for IOPS testing.
-## read-maxTHROUGHPUT-random.fio 	
-This test runs RANDOM IO using 1M Blocksize, a larger blocksize will yield higher throughput and lower IOPS.
 ## read-maxTHROUGHPUT-sequential.fio 	
 This test runs SEQUENTIAL IO using 1M Blocksize, a larger blocksize will yield higher throughput and lower IOPS.
 ## write-maxIOPS-sequential.fio 	
