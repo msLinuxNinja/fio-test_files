@@ -7,8 +7,6 @@ To run FIO simply move into the directory you want to test and run:
 `fio /path/to/config/file`
 
 
-## read-maxIOPS-random.fio 
-This test runs RANDOM IO using 4K blocksize, with a smaller blocksize this test is suited for IOPS testing.
 ## read-maxIOPS-sequential.fio 	
 This test runs SEQUENTIAL IO using 4K blocksize, with a smaller blocksize this test is suited for IOPS testing.
 ## read-maxTHROUGHPUT-sequential.fio 	
