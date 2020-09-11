@@ -10,6 +10,7 @@ bs=4K
 numjobs=4
 time_based=1
 runtime=60
+ramp_time=5s
 iodepth=32
 ioengine=libaio
 direct=1
