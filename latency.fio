@@ -1,0 +1,21 @@
+#This test is limits the IOPS rate to avoid reaching the limits of disks in order to test latency
+#The rate_iops value needs to be changed to just below the limits of the storage system being tested
+#The total available IOPS for the storage system needs to be divided by 4 
+#and the resulting value adjusted in the rate_iops. For Example 4000 IOPS / 4 = 1000
+[global]
+name=latency
+rw=randrw
+group_reporting=1
+bs=4K
+numjobs=4
+time_based=1
+runtime=60
+iodepth=32
+ioengine=libaio
+direct=1
+rate_iops=1000
+
+
+[file1]
+size=1G
+filename=fio.file.1
